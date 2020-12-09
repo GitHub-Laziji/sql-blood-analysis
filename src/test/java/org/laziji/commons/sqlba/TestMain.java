@@ -18,7 +18,7 @@ public class TestMain {
                 "      from (select k.dsi1 dtsid from (select dsi1,dsi2 from md) k) as m\n" +
                 "             join dts d on m.dtsid = d.id) b\n" +
                 "       join md on b.id = md.id\n" +
-                "where b.type = 'xx'", JdbcConstants.MYSQL), true));
+                "where b.type = 'xx'", "default", JdbcConstants.MYSQL), true));
     }
 
 }
